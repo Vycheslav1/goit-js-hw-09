@@ -40,7 +40,7 @@ function handleClick(evt){
   for(let i=0;i<amount.value;i+=1)
   {
   
-   delayValue=i>0?delayValue=delayValue+Number.parseInt(step.value):Number.parseInt(delay.value); 
+   delayValue=i>0?delayValue+=Number.parseInt(step.value):Number.parseInt(delay.value); 
 
   createPromise(i+1, delayValue);
 
